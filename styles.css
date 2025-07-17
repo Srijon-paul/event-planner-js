@@ -1,0 +1,435 @@
+body {
+	font-family: "poppins", "ubuntu";
+	background-color: #111111;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+
+@media only screen and (max-width: 378px) {
+	.dateGrid table th {
+		text-align: center;
+		margin: auto, auto;
+		width: 7vw;
+		padding: 5px;
+		border-radius: 6px;
+	}
+
+	.dateGrid div select {
+		gap: 10px;
+	}
+
+	.eventbody form #eventText {
+		font-size: 0.7em;
+		width: 60vw;
+	}
+
+	.eventbody form button {
+		font-size: 0.7em;
+		width: 32vw;
+	}
+
+	.eventbody form #removeButton {
+		font-size: 0.5em;
+		width: 10vw;
+	}
+
+	.eventBody2 {
+		flex-direction: column;
+		gap: 10vw;
+		text-align: center;
+	}
+
+	.coverEvent {
+		flex-direction: column;
+	}
+
+	.eventBody2 .todayList {
+		align-self: center;
+		justify-content: center;
+	}
+
+	.eventBody2 .todayList p {
+		text-align: center;
+	}
+
+	.coverEvent .displayEvent {
+		font-size: 1.5em;
+	}
+
+	.dateGrid #monthsDropdown,
+	#yearDropdown {
+		font-size: 1.2em;
+	}
+
+	body footer {
+		position: relative;
+		margin-top: auto;
+	}
+	.eventStyle {
+		background-color: rgb(2, 39, 105);
+	}
+}
+
+@media only screen and (max-width: 455px) {
+	header h1 {
+		text-align: center;
+		font-size: 1em;
+		width: 100vw;
+	}
+
+	.eventbody form #eventText {
+		font-size: 0.7em;
+		width: 50vw;
+	}
+
+	.coverEvent .eventbody form button {
+		font-size: 0.6em;
+		width: 22vw;
+	}
+
+	.eventbody form #removeButton {
+		width: 10vw;
+	}
+
+	.eventBody2 {
+		flex-direction: column;
+		gap: 5vw;
+		text-align: center;
+	}
+
+	.coverEvent {
+		flex-direction: column;
+	}
+
+	.coverEvent .dateGrid #monthsDropdown {
+		font-size: 1.5em;
+		margin-right: 5px;
+	}
+
+	.coverEvent .dateGrid #yearDropdown {
+		font-size: 1.5em;
+		margin-left: 5px;
+	}
+
+	footer {
+		position: relative;
+		margin: auto;
+	}
+
+	.dateGrid {
+		font-size: 0.7em;
+		padding: 2px;
+	}
+
+	.eventBody2 .todayList {
+		align-self: center;
+		justify-content: center;
+	}
+
+	.eventBody2 .todayList p {
+		text-align: center;
+	}
+
+	.coverEvent .displayEvent {
+		font-size: 1.5em;
+	}
+
+
+	body footer {
+		position: relative;
+		margin-top: auto;
+	}
+
+	tbody .eventStyle {
+		background-color: rgb(2, 67, 181);
+	}
+
+}
+
+@media only screen and (min-width: 455px) and (max-width: 800px) {
+	.eventBody2 {
+		margin: 10px;
+		flex-direction: row;
+		justify-content: center;
+		gap: 5vw;
+		justify-items: center;
+		text-align: center;
+		font-size: 0.8em;
+	}
+	tbody .eventStyle {
+		background-color: rgb(2, 67, 181);
+	}
+}
+
+@media only screen and (min-width: 455px) and (max-width: 1130px) {
+	header h1 {
+		text-align: center;
+		font-size: 1.5em;
+		width: 100vw;
+	}
+
+	.eventbody form #eventText {
+		font-size: 0.8em;
+		width: 38vw;
+	}
+
+	.eventbody form button {
+		font-size: 0.8em;
+		width: 10em;
+		height: 3.5em;
+	}
+
+	.eventbody form #removeButton {
+		width: 9vw;
+	}
+
+	.eventBody2 {
+		margin: 10px;
+		flex-direction: row;
+		justify-content: center;
+		/* gap: 1vw; */
+		scroll-behavior: smooth;
+	}
+
+	.coverEvent {
+		flex-direction: column;
+	}
+
+	.eventBody2 .todayList {
+		align-self: center;
+		justify-content: center;
+	}
+
+	.coverEvent .dateGrid #monthsDropdown {
+		font-size: 1.2em;
+		margin-right: 5px;
+	}
+
+	.coverEvent .dateGrid #yearDropdown {
+		font-size: 1.2em;
+		margin-left: 5px;
+	}
+
+	body footer {
+		position: relative;
+		margin-top: auto;
+	}
+
+	tbody .eventStyle {
+		background-color: rgb(2, 67, 181);
+	}
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1.5em;
+}
+
+.coverEvent {
+	display: flex;
+	justify-content: center;
+	gap: 8vw;
+}
+
+.dateGrid {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.dateGrid #monthsDropdown,
+#yearDropdown {
+	justify-items: center;
+	appearance: none;
+	border: none;
+	background-color: #111111;
+	color: white;
+	text-align: center;
+	font-family: "poppins";
+	font-size: 1.1em;
+	transition: 250ms ease-in-out;
+}
+
+.dateGrid #monthsDropdown:hover,
+#yearDropdown:hover {
+	transform: scale(1.1);
+	font-weight: 600;
+}
+
+.eventbody {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 2vw;
+	padding: auto;
+}
+
+.eventBody2 {
+	display: flex;
+	gap: 6vw;
+	margin: 1vw 1vw;
+}
+
+body footer {
+	position: relative;
+	margin-top: 10vh;
+	align-self: center;
+	display: flex;
+	gap: 30px;
+	align-items: center;
+}
+
+form {
+	display: flex;
+	align-items: center;
+	align-self: center;
+}
+
+.formdiv #eventText {
+	text-align: center;
+	width: 18vw;
+	height: 4vh;
+	border: 1px solid white;
+	border-radius: 10px;
+	background-color: #111111;
+	padding: 7px;
+	color: white;
+	transition: 100ms ease-in-out;
+}
+
+form #eventText:hover {
+	border: 3px solid white;
+}
+
+form #removeButton {
+	width: 4vw;
+	background-color: rgb(1, 42, 33);
+}
+
+form button {
+	text-align: center;
+	width: 9vw;
+	height: 6vh;
+	margin: 7px;
+	background-color: rgb(121, 121, 12);
+	border: 1px solid white;
+	border-radius: 10px;
+	color: white;
+	font-size: 1em;
+	transition: 250ms ease-in-out;
+}
+
+form button:hover {
+	cursor: pointer;
+	transform: translateY(-5px);
+	box-shadow: 0px 10px 10px rgb(84, 83, 83);
+	border: 3px solid white;
+	border-radius: 10px;
+}
+
+th {
+	border: 1px solid white;
+	border-radius: 10px;
+	padding: 8px;
+	transition: 250ms ease-in-out;
+}
+
+.tableHead th {
+	background-color: #550808;
+}
+
+table thead>tr {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	justify-content: center;
+	gap: 8px;
+	margin: 10px;
+	margin-bottom: 2px;
+}
+
+table tbody>tr {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 8px;
+	margin: 10px;
+}
+
+table tbody th:hover {
+	cursor: pointer;
+	transform: translateY(-5px);
+	box-shadow: 0px 5px 5px rgba(236, 235, 235, 0.5);
+	font-weight: 900;
+	border: 3px solid white;
+	border-radius: 10px;
+}
+
+#currentDate {
+	background-color: #414141;
+}
+
+#eventDate {
+	background-color: rgb(121, 121, 12);
+}
+
+#yourEvents,
+#todaysEvents {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.eventBody2 li {
+	align-self: flex-start;
+}
+
+.todayList .noEvent {
+	color: rgb(121, 121, 12);
+}
+
+.todayList {
+	max-height: 45vh;
+	overflow-y: auto;
+	scrollbar-width: thin;
+	scrollbar-gutter: stable;
+	scroll-behavior: smooth;
+	padding-top: 8px;
+	padding-right: 10px;
+	flex-direction: column;
+	align-self: flex-start;
+	list-style: none;
+	text-align: left;
+	display: block;
+	position: relative;
+}
+
+.displayEvent {
+	font-size: 1.1em;
+	font-weight: bolder;
+}
+
+.hidden {
+	display: none;
+}
+
+.currDate {
+	background-color: rgb(4, 123, 97) !important;
+}
+
+.select {
+	background-color: rgb(92, 92, 2) !important;
+}
+
+.eventStyle {
+	background-color: rgb(1, 19, 49);
+}
+
+.invisible {
+	visibility: hidden;
+}
